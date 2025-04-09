@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import TodoList from './assets/components/TodoList/TodoList';
+import {TodoList} from './assets/components/TodoList/TodoList';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -41,8 +41,8 @@ function App() {
 
         {/* Footer */}
         <footer className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>Double-click to edit a todo • Created with React + TypeScript</p>
-          <p className="mt-1">Drag and drop to reorder list</p>
+          {/* <p>Double-click to edit a todo </p>
+          <p className="mt-1">Drag and drop to reorder list</p> */}
         </footer>
       </div>
     </div>
