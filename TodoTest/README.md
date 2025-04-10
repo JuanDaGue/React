@@ -46,3 +46,5 @@ Sí, he trabajado con Scrum, aunque conosco un poco del marco de Kanban. Me he a
 ### 3. ¿Qué harías si te asignan una tarea con una tecnología que no conoces?
 
 Lo primero que hago es investigar bien: reviso la documentación oficial, videos cortos, artículos, lo que me ayude a entender cómo funciona. Me gusta hacer pruebas rápidas por mi cuenta para ver cómo se comporta la tecnología. Si tengo dudas más puntuales, no dudo en preguntarle al equipo. Tambien me gusta usar herramientas de inteligencia artificial, como son ChatGpt o Cursor AI
+
+### El punto % lo puedes encontrar en la siguiente Ruta REACT/TodoTest/MVC
