@@ -1,4 +1,4 @@
-import { User } from '../../../../../Types';
+import { User } from '../../../Types';
 
 type UserCardProps = {
   user: User;

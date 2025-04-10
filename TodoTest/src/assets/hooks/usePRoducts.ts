@@ -1,0 +1,31 @@
+import { useEffect, useState } from 'react';
+import { ProductList } from '../../../Types';
+
+const API_URL = 'https://fakestoreapi.com/products?limit=10';
+
+export function useProducts() {
+  const [products, setProducts] = useState<ProductList>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setProducts(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Unknown error occurred');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  return { products, loading, error };
+}

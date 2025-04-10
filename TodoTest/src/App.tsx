@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './assets/components/Navigation';
 import { TodoList } from './assets/components/TodoList/TodoList';
 import { UserList } from './assets/components/UserList/UserList';
-import { ProductCard } from './assets/components/ProductCard/ProductCard';
+//import { ProductCard } from './assets/components/ProductCard/ProductCard';
+import { ProductGrid } from './assets/components/ProductCard/ProductGrid';
+import { ThemeProvider } from '../src/assets/contexts/ThemeProvider';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-
   return (
     <Router>
       <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-gray-100' : 'bg-gray-50 text-gray-900'}`}>
@@ -33,7 +34,7 @@ function App() {
               <Routes>
                 <Route path="/todos" element={<TodoList />} />
                 <Route path="/users" element={<UserList />} />
-                <Route path="/products" element={<ProductCard />} />
+                <Route path="/products" element={<ProductGrid />} />
                 <Route path="/" element={<TodoList />} />
               </Routes>
             </main>

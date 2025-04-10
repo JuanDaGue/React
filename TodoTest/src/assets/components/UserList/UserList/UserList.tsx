@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { User } from '../../../../../Types';
 import { UserCard } from '../UserCard';
-import { fetchUsers } from '../useUsers';
+import { fetchUsers } from '../../../hooks/useUsers';
 
 export function UserList() {
   const [users, setUsers] = useState<User[]>([]);

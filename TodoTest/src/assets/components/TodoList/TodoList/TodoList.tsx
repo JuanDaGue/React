@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Todo } from '../../../../../Types';
 
-
 export const TodoList=()=> {
   const [todos, setTodos] = useState<Todo[]>(() => {
     const saved = localStorage.getItem('todos');
@@ -38,7 +37,6 @@ export const TodoList=()=> {
     <div className="min-h-screen bg-gray-900 p-6 text-gray-100">
       <div className="max-w-md mx-auto">
         <h1 className="text-3xl font-bold text-purple-400 mb-6">Todo App</h1>
-        
         <div className="flex gap-2 mb-6">
           <input
             type="text"
