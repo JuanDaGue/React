@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ProductList } from '../../../Types';
 
-const API_URL = 'https://fakestoreapi.com/products?limit=10';
+const API_URL = import.meta.env.VITE_APP_API_URL || 'https://fakestoreapi.com/products';
 
 export function useProducts() {
   const [products, setProducts] = useState<ProductList>([]);

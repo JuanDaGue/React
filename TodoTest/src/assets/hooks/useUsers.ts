@@ -1,12 +1,12 @@
 import { User } from '../../../Types';
 
-const API_URL = 'https://jsonplaceholder.typicode.com/users';
+const API_URL = import.meta.env.VITE_APP_API_URL || 'https://jsonplaceholder.typicode.com/users';
+// const API_URL = 'https://jsonplaceholder.typicode.com/users'; // Fallback URL if env variable is not set
 
 export async function fetchUsers(): Promise<User[]> {
-    // const apiUrl = process.env.REACT_APP_API_URL;
-    // console.log("API", apiUrl);
-    const jwtToken = process.env.REACT_APP_JWT_TOKEN;
-  
+
+    const jwtToken = import.meta.env.VITE_APP_JWT_TOKEN;
+  console.log("JWT", jwtToken);
   const response = await fetch(API_URL, {
     headers: {
       'Authorization': `Bearer ${jwtToken}`, 

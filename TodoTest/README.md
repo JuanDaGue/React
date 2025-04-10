@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# Frontend Technical Test - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Dark Mode Demo](demo-dark.gif) ![Light Mode Demo](demo-light.gif)
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A responsive todo application with product listing and user management features, built with:
 
-## Expanding the ESLint configuration
+- React 18
+- TypeScript
+- Tailwind CSS
+- React Router
+- Context API for state management
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![alt text](image.png)
+![alt text](image-1.png)
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Core Functionality
+✅ Dark/Light mode toggle  
+✅ Todo list with CRUD operations  
+✅ Product listing from FakeStore API  
+✅ User management interface  
+✅ Responsive design  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Technical Highlights
+⚛️ React functional components with Hooks  
+🔷 TypeScript type safety  
+🎨 Tailwind CSS for utility-first styling  
+🔗 React Router for navigation  
+📱 Fully responsive layout  
+🌓 System-preference aware dark mode  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. ¿Cómo te organizas cuando trabajas en equipo con otros desarrolladores?
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Normalmente me gusta mantener una comunicación clara desde el inicio. Uso herramientas como Git para trabajar en ramas bien organizadas y plataformas como Jira o Trello para seguir el avance del proyecto. Si trabajamos con *dailies* o revisiones de código, participo activamente porque creo que eso ayuda a que todos estemos en la misma página. Siempre trato de dejar todo bien documentado para que cualquier persona del equipo pueda seguir el hilo sin problemas.
+
+---
+
+### 2. ¿Has usado alguna metodología ágil como Scrum o Kanban?
+
+Sí, he trabajado con Scrum, aunque conosco un poco del marco de Kanban. Me he acostumbrado a tener reuniones diarias, planear *sprints*, hacer retrospectivas, y eso me ha ayudado a organizar mejor mis tareas y adaptarme a los cambios. 
+
+---
+
+### 3. ¿Qué harías si te asignan una tarea con una tecnología que no conoces?
+
+Lo primero que hago es investigar bien: reviso la documentación oficial, videos cortos, artículos, lo que me ayude a entender cómo funciona. Me gusta hacer pruebas rápidas por mi cuenta para ver cómo se comporta la tecnología. Si tengo dudas más puntuales, no dudo en preguntarle al equipo. Tambien me gusta usar herramientas de inteligencia artificial, como son ChatGpt o Cursor AI
